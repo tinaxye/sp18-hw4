@@ -1,0 +1,15 @@
+<h1>Add a task</h1>
+
+<%= form_for @new_t do |form| %>
+  Task:  <%= form.text_field :tasks%>
+
+  <br>
+  <br>
+
+  Finished? <%= form.check_box :finished%>
+
+  <br>
+  <br>
+
+  <%= form.submit %>
+<% end %>

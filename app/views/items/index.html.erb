@@ -1,0 +1,33 @@
+<h1>All Your Things!</h1>
+
+<h2>Cats</h2>
+<% @cats.each do |cat| %>
+  <p>
+    Name: <%= cat.name %>
+    <br>
+  </p>
+<% end %>
+
+<br>
+<h2>Users</h2>
+<% @users.each do |user| %>
+  <p>
+    Username: <%= user.username %>
+    <br>
+    Email: <%= user.email %>
+    <br>
+    Age: <%= user.age %>
+    <br>
+  </p>
+<% end %>
+<br>
+
+<h2>Todo</h2>
+<% @todos.each do |todo| %>
+  <p>
+    Your task: <%= todo.tasks %>
+    <br>
+    Finished? <%= todo.finished ? "yes" : "no" %>
+    <br>
+  </p>
+<% end %>
